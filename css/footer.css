@@ -9,14 +9,37 @@ footer {
   background-color: white;
 }
 
+:root {
+  --btn-background: rgb(254, 111, 15);
+  --btn-hover: rgba(254, 111, 15, 0.5);
+}
+
 .footer-block {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
 }
+
+@keyframes icon_dong_dong {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icon__img {
   width: 30px;
 }
+
+.footer-icons:hover .footer-icon__img {
+  animation: 1.3s icon_dong_dong;
+}
+
 .footer-icons {
   font-size: 15px;
   font-weight: bold;
