@@ -50,12 +50,14 @@ main {
   position: fixed;
   bottom: 160px;
   right: 60px;
-  background-color: #fe6f0f;
+  background-color: var(--btn-background);
   color: white;
   font-size: 15px;
   padding: 10px 20px 10px 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   border-radius: 25px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
 }
 
 .media-info-msg {
@@ -68,6 +70,10 @@ main {
   align-items: center;
   justify-content: center;
   background-color: salmon;
+}
+
+.write-btn:hover {
+  background-color: var(--btn-hover);
 }
 
 @media screen and (max-width: 500px) {
